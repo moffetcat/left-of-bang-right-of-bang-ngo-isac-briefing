@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Left of Bang / Right of Bang | NGO-ISAC Briefing</title>
+<meta name="description" content="A resilience maturity model for lean security teams. View all 24 slides from the NGO-ISAC briefing or download the PowerPoint and PDF.">
+<meta property="og:title" content="Left of Bang / Right of Bang">
+<meta property="og:description" content="A Resilience Maturity Model for Lean Security Teams | NGO-ISAC Briefing">
+<meta name="color-scheme" content="dark">
+<style>
+* { box-sizing: border-box; }
+html { scroll-padding-top: 6rem; }
+body { margin: 0; background: #0c1424; color: #eef3fb; font: 1rem/1.6 system-ui, sans-serif; }
+a { color: #8dded8; text-underline-offset: .2em; }
+a:focus-visible, select:focus-visible, summary:focus-visible { outline: 3px solid #ffc043; outline-offset: 4px; }
+.skip { position: absolute; left: 1rem; top: -5rem; }
+.skip:focus { top: 1rem; background: #0c1424; z-index: 3; }
+header, main, footer { max-width: 1280px; margin: auto; padding: 1.5rem; }
+header { padding-top: 3rem; }
+.eyebrow { color: #8dded8; letter-spacing: .12em; text-transform: uppercase; }
+h1 { font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.15; margin: .5rem 0 1rem; }
+.subtitle { font-size: 1.25rem; }
+.downloads { display: flex; flex-wrap: wrap; gap: .75rem; margin: 1.5rem 0; }
+.downloads a { border: 1px solid #53718c; border-radius: .5rem; padding: .6rem 1rem; text-decoration: none; }
+.downloads a:hover { background: #1d3046; }
+nav { position: sticky; top: 0; z-index: 1; background: #132136; border-block: 1px solid #34465c; padding: .75rem 1.5rem; }
+nav div { max-width: 1232px; margin: auto; display: flex; align-items: center; gap: .75rem; }
+select { min-width: 0; max-width: 100%; flex: 1; background: #0c1424; color: #eef3fb; border: 1px solid #53718c; border-radius: .3rem; padding: .5rem; font: inherit; }
+section { margin-bottom: 3rem; }
+h2 { font-size: 1.1rem; font-weight: 500; }
+h2 span { color: #aabdd2; display: inline-block; margin-right: .5rem; }
+img { display: block; width: 100%; height: auto; border: 1px solid #34465c; border-radius: .4rem; }
+details { margin-top: .75rem; color: #c9d6e6; }
+summary { cursor: pointer; width: fit-content; }
+details p { margin: .4rem 0; }
+footer { color: #aabdd2; border-top: 1px solid #34465c; }
+@media (max-width: 600px) { header, main, footer { padding-inline: 1rem; } nav { padding-inline: 1rem; } }
+@media print {
+  body { background: white; color: black; }
+  header, nav, footer, h2, details { display: none; }
+  main { padding: 0; max-width: none; }
+  section { break-after: page; margin: 0; }
+  img { border: 0; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#slides">Skip to slides</a>
+<header>
+  <p class="eyebrow">NGO-ISAC Briefing | November 5, 2026</p>
+  <h1>Left of Bang / Right of Bang</h1>
+  <p class="subtitle">A Resilience Maturity Model for Lean Security Teams</p>
+  <p>Joseph Davis | Microsoft Security</p>
+  <div class="downloads">
+    <a href="assets/left-of-bang-right-of-bang.pptx" download>Download PowerPoint (.pptx)</a>
+    <a href="assets/left-of-bang-right-of-bang.pdf">View / download PDF</a>
+  </div>
+  <p>24 slides, including worksheets and appendix tools. Scroll to browse, or jump to a slide.
+  Select a slide image to open it at full size. Browser slides are static; the original PowerPoint is available above.</p>
+</header>
+<nav aria-label="Slide navigation"><div>
+  <label for="jump">Jump to slide</label>
+  <select id="jump"><option value="">Choose a slide</option><option value="slide-1">1. Left of Bang / Right of Bang</option>
+<option value="slide-2">2. Nonprofits carry real risk with very small teams</option>
+<option value="slide-3">3. The &quot;bang&quot; is the moment a disruptive cyber incident hits</option>
+<option value="slide-4">4. Resilience spans the whole timeline, not just prevention</option>
+<option value="slide-5">5. Four lenses show where your resilience is strong and where it is thin</option>
+<option value="slide-6">6. Operational: get the everyday basics right</option>
+<option value="slide-7">7. Readiness: decide before the crisis, not during it</option>
+<option value="slide-8">8. Tactical: the first hour matters most</option>
+<option value="slide-9">9. Strategic: a sequenced journey, not a big-bang transformation</option>
+<option value="slide-10">10. The resilience matrix: eight boxes, one picture</option>
+<option value="slide-11">11. Score honestly: the goal is clarity, not a perfect score</option>
+<option value="slide-12">12. Your quick check: eight questions, Red, Yellow, or Green</option>
+<option value="slide-13">13. The biggest gap is not always the top priority</option>
+<option value="slide-14">14. Illustrative example: &quot;Harbor Community Services&quot; (fictional)</option>
+<option value="slide-15">15. 90 days to stronger resilience, sized for a small team</option>
+<option value="slide-16">16. Minimum viable resilience: start here</option>
+<option value="slide-17">17. Four things to take back to your organization</option>
+<option value="slide-18">18. Let us apply the model together</option>
+<option value="slide-19">19. Appendix</option>
+<option value="slide-20">20. Appendix A: Detailed self-assessment worksheet</option>
+<option value="slide-21">21. Appendix B: Glossary</option>
+<option value="slide-22">22. Appendix C: Sample tabletop exercise scenario</option>
+<option value="slide-23">23. Appendix D: Incident contact and decision log</option>
+<option value="slide-24">24. Appendix E: One-page maturity matrix (printable)</option></select>
+</div></nav>
+<main id="slides">
+<section id="slide-1" aria-labelledby="heading-1">
+  <h2 id="heading-1"><span>1 / 24</span> Left of Bang / Right of Bang</h2>
+  <a href="assets/slide-01.jpg" aria-label="Open slide 1 at full size">
+    <img src="assets/slide-01.jpg" width="1920" height="1080"
+         alt="Slide 1: Left of Bang / Right of Bang. Text version below." fetchpriority="high">
+  </a>
+  <details><summary>Slide 1 text</summary><p>Left of Bang / Right of Bang</p><p>A Resilience Maturity Model for Lean Security Teams</p><p>LEFT OF BANG</p><p>BANG</p><p>RIGHT OF BANG</p><p>NGO-ISAC Briefing | November 5</p><p>Joseph Davis | Customer Security Officer, Health &amp; Life Sciences | Microsoft Security</p></details>
+</section>
+
+<section id="slide-2" aria-labelledby="heading-2">
+  <h2 id="heading-2"><span>2 / 24</span> Nonprofits carry real risk with very small teams</h2>
+  <a href="assets/slide-02.jpg" aria-label="Open slide 2 at full size">
+    <img src="assets/slide-02.jpg" width="1920" height="1080"
+         alt="Slide 2: Nonprofits carry real risk with very small teams. Text version below." loading="lazy">
+  </a>
+  <details><summary>Slide 2 text</summary><p>Nonprofits carry real risk with very small teams</p><p>Security is often one or two people, sometimes part time</p><p>Staff wear many hats: IT, facilities, finance, and security</p><p>Budgets compete directly with mission programs</p><p>Hardest question: which investment should come first?</p><p>NGO-ISAC Briefing | November 5 | Educational maturity model, not an audit or certification</p><p>2</p></details>
+</section>
+
+<section id="slide-3" aria-labelledby="heading-3">
+  <h2 id="heading-3"><span>3 / 24</span> The &quot;bang&quot; is the moment a disruptive cyber incident hits</h2>
+  <a href="assets/slide-03.jpg" aria-label="Open slide 3 at full size">
+    <img src="assets/slide-03.jpg" width="1920" height="1080"
+         alt="Slide 3: The &quot;bang&quot; is the moment a disruptive cyber incident hits. Text version below." loading="lazy">
+  </a>
+  <details><summary>Slide 3 text</summary><p>The &quot;bang&quot; is the moment a disruptive cyber incident hits</p><p>Ransomware locks files or systems</p><p>An account is taken over, such as by AI-written phishing</p><p>Sensitive data is exposed or shared by mistake</p><p>A critical service goes down, such as email or donation processing</p><p>BANG: the incident</p><p>Resilience means being ready on both sides of that moment</p><p>NGO-ISAC Briefing | November 5 | Educational maturity model, not an audit or certification</p><p>3</p></details>
+</section>
+
+<section id="slide-4" aria-labelledby="heading-4">
+  <h2 id="heading-4"><span>4 / 24</span> Resilience spans the whole timeline, not just prevention</h2>
+  <a href="assets/slide-04.jpg" aria-label="Open slide 4 at full size">
+    <img src="assets/slide-04.jpg" width="1920" height="1080"
+         alt="Slide 4: Resilience spans the whole timeline, not just prevention. Text version below." loading="lazy">
+  </a>
+  <details><summary>Slide 4 text</summary><p>Resilience spans the whole timeline, not just prevention</p><p>LEFT OF BANG</p><p>Reduce likelihood and prepare</p><p>RIGHT OF BANG</p><p>Contain, recover, communicate, improve</p><p>BANG: the incident</p><p>Know what you have</p><p>Protect accounts and data</p><p>Plan and practice</p><p>Contain the damage</p><p>Restore services</p><p>Communicate clearly</p><p>Learn and improve</p><p>NGO-ISAC Briefing | November 5 | Educational maturity model, not an audit or certification</p><p>4</p></details>
+</section>
+
+<section id="slide-5" aria-labelledby="heading-5">
+  <h2 id="heading-5"><span>5 / 24</span> Four lenses show where your resilience is strong and where it is thin</h2>
+  <a href="assets/slide-05.jpg" aria-label="Open slide 5 at full size">
+    <img src="assets/slide-05.jpg" width="1920" height="1080"
+         alt="Slide 5: Four lenses show where your resilience is strong and where it is thin. Text version below." loading="lazy">
+  </a>
+  <details><summary>Slide 5 text</summary><p>Four lenses show where your resilience is strong and where it is thin</p><p>Operational</p><p>The everyday security habits that keep systems and accounts healthy.</p><p>Readiness</p><p>The plans, practice, and contacts that let you act quickly when something happens.</p><p>Tactical</p><p>The specific actions you take in the first hours of an incident.</p><p>Strategic</p><p>The long-term direction, leadership support, and investments that strengthen everything else.</p><p>Each lens applies Left of Bang and Right of Bang.</p><p>NGO-ISAC Briefing | November 5 | Educational maturity model, not an audit or certification</p><p>5</p></details>
+</section>
+
+<section id="slide-6" aria-labelledby="heading-6">
+  <h2 id="heading-6"><span>6 / 24</span> Operational: get the everyday basics right</h2>
+  <a href="assets/slide-06.jpg" aria-label="Open slide 6 at full size">
+    <img src="assets/slide-06.jpg" width="1920" height="1080"
+         alt="Slide 6: Operational: get the everyday basics right. Text version below." loading="lazy">
+  </a>
+  <details><summary>Slide 6 text</summary><p>Operational: get the everyday basics right</p><p>Left of Bang (prevent and prepare)</p><p>Know your devices, systems, and accounts</p><p>Keep systems updated and securely configured</p><p>Turn on multifactor authentication (MFA), phishing-resistant where possible</p><p>Run backups and basic alerting</p><p>Right of Bang (respond and recover)</p><p>Spot unusual sign-ins or activity quickly</p><p>Disable or reset compromised accounts</p><p>Restore from clean backups</p><p>NGO-ISAC Briefing | November 5 | Educational maturity model, not an audit or certification</p><p>6</p></details>
+</section>
+
+<section id="slide-7" aria-labelledby="heading-7">
+  <h2 id="heading-7"><span>7 / 24</span> Readiness: decide before the crisis, not during it</h2>
+  <a href="assets/slide-07.jpg" aria-label="Open slide 7 at full size">
+    <img src="assets/slide-07.jpg" width="1920" height="1080"
+         alt="Slide 7: Readiness: decide before the crisis, not during it. Text version below." loading="lazy">
+  </a>
+  <details><summary>Slide 7 text</summary><p>Readiness: decide before the crisis, not during it</p><p>Left of Bang (prevent and prepare)</p><p>A short, written incident plan with named roles</p><p>Tabletop exercises at least once a year</p><p>A map of which services depend on which systems and vendors</p><p>Current contacts, escalation paths, and vendor responsibilities</p><p>Right of Bang (respond and recover)</p><p>Activate the plan and assign roles</p><p>Use agreed recovery targets to set priorities</p><p>ILLUSTRATIVE EXAMPLE</p><p>Online donation service</p><p>Recovery Time Objective (RTO): how long it can be down. Example: 24 hours, then restore before giving events.</p><p>Recovery Point Objective (RPO): how much data you can afford to lose. Example: 4 hours of donation records.</p><p>NGO-ISAC Briefing | November 5 | Educational maturity model, not an audit or certification</p><p>7</p></details>
+</section>
+
+<section id="slide-8" aria-labelledby="heading-8">
+  <h2 id="heading-8"><span>8 / 24</span> Tactical: the first hour matters most</h2>
+  <a href="assets/slide-08.jpg" aria-label="Open slide 8 at full size">
+    <img src="assets/slide-08.jpg" width="1920" height="1080"
+         alt="Slide 8: Tactical: the first hour matters most. Text version below." loading="lazy">
+  </a>
+  <details><summary>Slide 8 text</summary><p>Tactical: the first hour matters most</p><p>1</p><p>Validate and triage</p><p>2</p><p>Contain</p><p>3</p><p>Preserve evidence</p><p>4</p><p>Communicate out of band</p><p>5</p><p>Track decisions and actions</p><p>6</p><p>Escalate and get help</p><p>✓</p><p>PRE-DECIDED</p><p>Do not improvise these</p><p>Who has authority to shut systems down</p><p>How you will communicate if email is compromised</p><p>Who contacts insurers, legal counsel, and law enforcement</p><p>What evidence to keep before wiping or rebuilding</p><p>NGO-ISAC Briefing | November 5 | Educational maturity model, not an audit or certification</p><p>8</p></details>
+</section>
+
+<section id="slide-9" aria-labelledby="heading-9">
+  <h2 id="heading-9"><span>9 / 24</span> Strategic: a sequenced journey, not a big-bang transformation</h2>
+  <a href="assets/slide-09.jpg" aria-label="Open slide 9 at full size">
+    <img src="assets/slide-09.jpg" width="1920" height="1080"
+         alt="Slide 9: Strategic: a sequenced journey, not a big-bang transformation. Text version below." loading="lazy">
+  </a>
+  <details><summary>Slide 9 text</summary><p>Strategic: a sequenced journey, not a big-bang transformation</p><p>STEP 1</p><p>Govern</p><p>Leadership owns cyber risk; brief the board regularly</p><p>STEP 2</p><p>Zero Trust basics</p><p>Verify every sign-in and device; give only the access people need</p><p>STEP 3</p><p>Passwordless</p><p>Move staff to phishing-resistant sign-in, such as passkeys or security keys</p><p>STEP 4</p><p>Modernize</p><p>Retire fragile legacy systems on a planned schedule</p><p>Fund steadily, in line with mission risk</p><p>NGO-ISAC Briefing | November 5 | Educational maturity model, not an audit or certification</p><p>9</p></details>
+</section>
+
+<section id="slide-10" aria-labelledby="heading-10">
+  <h2 id="heading-10"><span>10 / 24</span> The resilience matrix: eight boxes, one picture</h2>
+  <a href="assets/slide-10.jpg" aria-label="Open slide 10 at full size">
+    <img src="assets/slide-10.jpg" width="1920" height="1080"
+         alt="Slide 10: The resilience matrix: eight boxes, one picture. Text version below." loading="lazy">
+  </a>
+  <details><summary>Slide 10 text</summary><p>The resilience matrix: eight boxes, one picture</p><p>Left of Bang</p><p>Right of Bang</p><p>Lens</p><p>Inventory of devices and accounts</p><p>Suspicious sign-in alerts reviewed</p><p>MFA on all accounts</p><p>Account disable and reset in minutes</p><p>Regular, automated backups</p><p>Restore tested from backup</p><p>Operational</p><p>Written plan with named roles</p><p>Plan activated with clear roles</p><p>Annual tabletop exercise</p><p>Contact list and vendor escalation used</p><p>RTO and RPO set for key services</p><p>Recovery follows agreed priorities</p><p>Readiness</p><p>First-hour checklist exists</p><p>Incident validated and contained</p><p>Out-of-band channel agreed</p><p>Evidence preserved before cleanup</p><p>Authority to isolate systems defined</p><p>Decision log kept with times</p><p>Tactical</p><p>Leadership owns cyber risk</p><p>Board and stakeholders briefed</p><p>Multi-year roadmap funded</p><p>Lessons learned fund real fixes</p><p>Zero Trust and passwordless steps planned</p><p>Plan updated after each incident</p><p>Strategic</p><p>NGO-ISAC Briefing | November 5 | Educational maturity model, not an audit or certification</p><p>10</p></details>
+</section>
+
+<section id="slide-11" aria-labelledby="heading-11">
+  <h2 id="heading-11"><span>11 / 24</span> Score honestly: the goal is clarity, not a perfect score</h2>
+  <a href="assets/slide-11.jpg" aria-label="Open slide 11 at full size">
+    <img src="assets/slide-11.jpg" width="1920" height="1080"
+         alt="Slide 11: Score honestly: the goal is clarity, not a perfect score. Text version below." loading="lazy">
+  </a>
+  <details><summary>Slide 11 text</summary><p>Score honestly: the goal is clarity, not a perfect score</p><p>0</p><p>Not established</p><p>It does not exist yet</p><p>1</p><p>Informal</p><p>Works, but depends on one person</p><p>2</p><p>Documented and repeatable</p><p>Written down; others can do it</p><p>3</p><p>Tested, measured, and improving</p><p>Practiced, checked, and getting better</p><p>A &quot;1&quot; with a clear plan beats a &quot;3&quot; on paper.</p><p>NGO-ISAC Briefing | November 5 | Educational maturity model, not an audit or certification</p><p>11</p></details>
+</section>
+
+<section id="slide-12" aria-labelledby="heading-12">
+  <h2 id="heading-12"><span>12 / 24</span> Your quick check: eight questions, Red, Yellow, or Green</h2>
+  <a href="assets/slide-12.jpg" aria-label="Open slide 12 at full size">
+    <img src="assets/slide-12.jpg" width="1920" height="1080"
+         alt="Slide 12: Your quick check: eight questions, Red, Yellow, or Green. Text version below." loading="lazy">
+  </a>
+  <details><summary>Slide 12 text</summary><p>Your quick check: eight questions, Red, Yellow, or Green</p><p>Lens</p><p>Left of Bang question</p><p>Your answer</p><p>Right of Bang question</p><p>Your answer</p><p>Operational</p><p>Is MFA turned on for every staff and admin account?</p><p>Could you disable a compromised account within 30 minutes?</p><p>Readiness</p><p>Do you have a written incident plan with named roles?</p><p>Do you know your RTO and RPO for email and shared files?</p><p>Tactical</p><p>Have you agreed on a backup way to communicate if email is down?</p><p>Do you know what evidence to keep before cleaning up?</p><p>Strategic</p><p>Does leadership review cyber risk at least twice a year?</p><p>Did your last incident or exercise lead to a funded fix?</p><p>R</p><p>R = Not in place</p><p>Y</p><p>Y = Partial</p><p>G</p><p>G = In place</p><p>NGO-ISAC Briefing | November 5 | Educational maturity model, not an audit or certification</p><p>12</p></details>
+</section>
+
+<section id="slide-13" aria-labelledby="heading-13">
+  <h2 id="heading-13"><span>13 / 24</span> The biggest gap is not always the top priority</h2>
+  <a href="assets/slide-13.jpg" aria-label="Open slide 13 at full size">
+    <img src="assets/slide-13.jpg" width="1920" height="1080"
+         alt="Slide 13: The biggest gap is not always the top priority. Text version below." loading="lazy">
+  </a>
+  <details><summary>Slide 13 text</summary><p>The biggest gap is not always the top priority</p><p>Mission impact</p><p>How badly would this hurt people we serve?</p><p>Likelihood or exposure</p><p>How likely or exposed is it?</p><p>Time sensitivity</p><p>Does it get worse if we wait?</p><p>Effort and cost</p><p>Can we fix it with what we have?</p><p>Priority</p><p>Rate each 1 to 3.</p><p>Fix high-impact, high-likelihood, low-effort gaps first.</p><p>NGO-ISAC Briefing | November 5 | Educational maturity model, not an audit or certification</p><p>13</p></details>
+</section>
+
+<section id="slide-14" aria-labelledby="heading-14">
+  <h2 id="heading-14"><span>14 / 24</span> Illustrative example: &quot;Harbor Community Services&quot; (fictional)</h2>
+  <a href="assets/slide-14.jpg" aria-label="Open slide 14 at full size">
+    <img src="assets/slide-14.jpg" width="1920" height="1080"
+         alt="Slide 14: Illustrative example: &quot;Harbor Community Services&quot; (fictional). Text version below." loading="lazy">
+  </a>
+  <details><summary>Slide 14 text</summary><p>Illustrative example: &quot;Harbor Community Services&quot; (fictional)</p><p>FICTIONAL SCENARIO</p><p>2 IT staff | Cloud email and file sharing | Donor and beneficiary records | Limited annual security budget | Heavily dependent on email and shared files</p><p>Lens</p><p>Left of Bang</p><p>Right of Bang</p><p>Operational</p><p>Y</p><p>Partial</p><p>MFA on most, not all, accounts</p><p>Y</p><p>Partial</p><p>Readiness</p><p>R</p><p>Not in place</p><p>No written plan</p><p>R</p><p>Not in place</p><p>No RTO/RPO</p><p>Tactical</p><p>R</p><p>Not in place</p><p>No backup channel</p><p>Y</p><p>Partial</p><p>Strategic</p><p>Y</p><p>Partial</p><p>R</p><p>Not in place</p><p>Top 3 priorities</p><p>1</p><p>MFA on every account, starting with finance and admins</p><p>2</p><p>Two-page incident plan, contact list, and phone tree</p><p>3</p><p>Test restoring shared files and set RTO/RPO for email</p><p>NGO-ISAC Briefing | November 5 | Educational maturity model, not an audit or certification</p><p>14</p></details>
+</section>
+
+<section id="slide-15" aria-labelledby="heading-15">
+  <h2 id="heading-15"><span>15 / 24</span> 90 days to stronger resilience, sized for a small team</h2>
+  <a href="assets/slide-15.jpg" aria-label="Open slide 15 at full size">
+    <img src="assets/slide-15.jpg" width="1920" height="1080"
+         alt="Slide 15: 90 days to stronger resilience, sized for a small team. Text version below." loading="lazy">
+  </a>
+  <details><summary>Slide 15 text</summary><p>90 days to stronger resilience, sized for a small team</p><p>First 30 days</p><p>ESTABLISH</p><p>List key systems, accounts, and owners</p><p>Build the contact and escalation list</p><p>Turn on MFA for admin and finance accounts</p><p>Confirm backups are running</p><p>Days 31 to 60</p><p>PRACTICE</p><p>Write a short incident plan</p><p>Run a one-hour tabletop exercise</p><p>Test a restore from backup</p><p>Set up a backup channel and call-back rule</p><p>Days 61 to 90</p><p>STRENGTHEN</p><p>Close priority identity and device gaps</p><p>Set RTO and RPO for top services</p><p>Start passwordless for high-risk roles</p><p>Plan one modernization step and brief leadership</p><p>NGO-ISAC Briefing | November 5 | Educational maturity model, not an audit or certification</p><p>15</p></details>
+</section>
+
+<section id="slide-16" aria-labelledby="heading-16">
+  <h2 id="heading-16"><span>16 / 24</span> Minimum viable resilience: start here</h2>
+  <a href="assets/slide-16.jpg" aria-label="Open slide 16 at full size">
+    <img src="assets/slide-16.jpg" width="1920" height="1080"
+         alt="Slide 16: Minimum viable resilience: start here. Text version below." loading="lazy">
+  </a>
+  <details><summary>Slide 16 text</summary><p>Minimum viable resilience: start here</p><p>Must have now</p><p>MFA on all accounts, passkeys for admins</p><p>Current list of systems, accounts, and owners</p><p>Automated backups, with one restore tested</p><p>Emergency contact list and backup communication channel</p><p>Two-page incident plan with named roles</p><p>Build next</p><p>Annual tabletop exercise</p><p>RTO and RPO for top services</p><p>Passwordless sign-in for high-risk roles</p><p>Twice-yearly leadership risk review</p><p>Planned retirement of unsupported systems</p><p>NGO-ISAC Briefing | November 5 | Educational maturity model, not an audit or certification</p><p>16</p></details>
+</section>
+
+<section id="slide-17" aria-labelledby="heading-17">
+  <h2 id="heading-17"><span>17 / 24</span> Four things to take back to your organization</h2>
+  <a href="assets/slide-17.jpg" aria-label="Open slide 17 at full size">
+    <img src="assets/slide-17.jpg" width="1920" height="1080"
+         alt="Slide 17: Four things to take back to your organization. Text version below." loading="lazy">
+  </a>
+  <details><summary>Slide 17 text</summary><p>Four things to take back to your organization</p><p>1</p><p>Resilience is more than prevention</p><p>Plan for both sides of the bang</p><p>2</p><p>Small teams need explicit priorities</p><p>Fix what matters most to the mission first</p><p>3</p><p>Tested beats lengthy</p><p>A practiced two-page plan beats an untested binder</p><p>4</p><p>Use the model to decide what is next</p><p>It is a conversation tool for leaders</p><p>NGO-ISAC Briefing | November 5 | Educational maturity model, not an audit or certification</p><p>17</p></details>
+</section>
+
+<section id="slide-18" aria-labelledby="heading-18">
+  <h2 id="heading-18"><span>18 / 24</span> Let us apply the model together</h2>
+  <a href="assets/slide-18.jpg" aria-label="Open slide 18 at full size">
+    <img src="assets/slide-18.jpg" width="1920" height="1080"
+         alt="Slide 18: Let us apply the model together. Text version below." loading="lazy">
+  </a>
+  <details><summary>Slide 18 text</summary><p>Let us apply the model together</p><p>1</p><p>Which box in the matrix would hurt your mission most if it failed tomorrow?</p><p>2</p><p>What is one thing your organization could test in the next 30 days?</p><p>3</p><p>Who outside your IT team needs to be part of your incident plan?</p><p>Thank you | Joseph Davis | Microsoft Security</p><p>NGO-ISAC Briefing | November 5 | Educational maturity model, not an audit or certification</p><p>18</p></details>
+</section>
+
+<section id="slide-19" aria-labelledby="heading-19">
+  <h2 id="heading-19"><span>19 / 24</span> Appendix</h2>
+  <a href="assets/slide-19.jpg" aria-label="Open slide 19 at full size">
+    <img src="assets/slide-19.jpg" width="1920" height="1080"
+         alt="Slide 19: Appendix. Text version below." loading="lazy">
+  </a>
+  <details><summary>Slide 19 text</summary><p>Appendix</p><p>Tools to use after today</p><p>A</p><p>Worksheet</p><p>B</p><p>Glossary</p><p>C</p><p>Tabletop scenario</p><p>D</p><p>Contact and decision log</p><p>E</p><p>Printable matrix</p></details>
+</section>
+
+<section id="slide-20" aria-labelledby="heading-20">
+  <h2 id="heading-20"><span>20 / 24</span> Appendix A: Detailed self-assessment worksheet</h2>
+  <a href="assets/slide-20.jpg" aria-label="Open slide 20 at full size">
+    <img src="assets/slide-20.jpg" width="1920" height="1080"
+         alt="Slide 20: Appendix A: Detailed self-assessment worksheet. Text version below." loading="lazy">
+  </a>
+  <details><summary>Slide 20 text</summary><p>Appendix A: Detailed self-assessment worksheet</p><p>Lens</p><p>Timing</p><p>Capability to check</p><p>Score (0 to 3)</p><p>Evidence or notes</p><p>Owner</p><p>Operational</p><p>Left</p><p>Every staff, volunteer, and admin account uses MFA</p><p>Operational</p><p>Left</p><p>Current list of devices, systems, accounts, and owners; updates applied regularly</p><p>Operational</p><p>Right</p><p>We can disable an account and reset credentials within 30 minutes</p><p>Operational</p><p>Right</p><p>We have restored data from backup in the last 6 months</p><p>Readiness</p><p>Left</p><p>We have a written incident plan with named roles and alternates</p><p>Readiness</p><p>Left</p><p>We ran a tabletop exercise in the last 12 months</p><p>Readiness</p><p>Right</p><p>RTO and RPO are set for our top three services</p><p>Readiness</p><p>Right</p><p>Contacts include vendors, insurer, counsel, outside help; reviewed in 6 months</p><p>Tactical</p><p>Left</p><p>A first-hour checklist exists and staff know where it is</p><p>Tactical</p><p>Left</p><p>We agreed on an out-of-band channel and a call-back check for payment requests</p><p>Tactical</p><p>Right</p><p>We know who can authorize isolating or shutting down systems</p><p>Tactical</p><p>Right</p><p>We know what evidence to keep and we use a decision log</p><p>Strategic</p><p>Left</p><p>Leadership reviews cyber risk at least twice a year</p><p>Strategic</p><p>Left</p><p>We have a multi-year roadmap including Zero Trust and passwordless steps</p><p>Strategic</p><p>Right</p><p>Lessons from incidents and exercises lead to funded improvements</p><p>Strategic</p><p>Right</p><p>We have a plan to brief the board, staff, and stakeholders after an incident</p><p>Scale: 0 Not established | 1 Informal or one person | 2 Documented and repeatable | 3 Tested, measured, and improving</p><p>NGO-ISAC Briefing | November 5 | Educational maturity model, not an audit or certification</p><p>20</p></details>
+</section>
+
+<section id="slide-21" aria-labelledby="heading-21">
+  <h2 id="heading-21"><span>21 / 24</span> Appendix B: Glossary</h2>
+  <a href="assets/slide-21.jpg" aria-label="Open slide 21 at full size">
+    <img src="assets/slide-21.jpg" width="1920" height="1080"
+         alt="Slide 21: Appendix B: Glossary. Text version below." loading="lazy">
+  </a>
+  <details><summary>Slide 21 text</summary><p>Appendix B: Glossary</p><p>Term</p><p>Plain-language meaning</p><p>Multifactor authentication (MFA)</p><p>Signing in with a password plus a second proof, such as a phone app approval or code</p><p>Zero Trust</p><p>A security approach that checks every sign-in, device, and request, and gives only the access needed</p><p>Passwordless</p><p>Signing in without a password, using methods like passkeys or security keys that are much harder to phish</p><p>Recovery Time Objective (RTO)</p><p>The longest a service can be down before the mission is seriously harmed</p><p>Recovery Point Objective (RPO)</p><p>The most data, measured in time, you can afford to lose</p><p>Containment</p><p>Steps that stop an incident from spreading, such as disconnecting a device or disabling an account</p><p>Out-of-band communication</p><p>Using a separate channel, such as phone or a pre-agreed messaging group, when normal systems may be compromised</p><p>Tabletop exercise</p><p>A guided discussion where a team walks through a realistic scenario to test its plan</p><p>NGO-ISAC Briefing | November 5 | Educational maturity model, not an audit or certification</p><p>21</p></details>
+</section>
+
+<section id="slide-22" aria-labelledby="heading-22">
+  <h2 id="heading-22"><span>22 / 24</span> Appendix C: Sample tabletop exercise scenario</h2>
+  <a href="assets/slide-22.jpg" aria-label="Open slide 22 at full size">
+    <img src="assets/slide-22.jpg" width="1920" height="1080"
+         alt="Slide 22: Appendix C: Sample tabletop exercise scenario. Text version below." loading="lazy">
+  </a>
+  <details><summary>Slide 22 text</summary><p>Appendix C: Sample tabletop exercise scenario</p><p>FICTIONAL SCENARIO</p><p>About 60 minutes | 4 to 8 participants</p><p>&quot;The Friday Invoice&quot;</p><p>On a Friday afternoon, three donors call about an urgent payment request that appeared to come from your executive director. Finance also received a voicemail that sounded like the director. Neither was real.</p><p>Stage 1</p><p>Minutes 0 to 15</p><p>Who is told first?</p><p>How do you confirm what happened?</p><p>How do you verify a call or voice message?</p><p>Stage 2</p><p>Minutes 15 to 35</p><p>How do you contain the account?</p><p>What evidence do you keep?</p><p>Who calls your insurer or outside help?</p><p>Stage 3</p><p>Minutes 35 to 60</p><p>What do you tell donors, staff, and the board?</p><p>How do you restore files?</p><p>What will you fix first?</p><p>NGO-ISAC Briefing | November 5 | Educational maturity model, not an audit or certification</p><p>22</p></details>
+</section>
+
+<section id="slide-23" aria-labelledby="heading-23">
+  <h2 id="heading-23"><span>23 / 24</span> Appendix D: Incident contact and decision log</h2>
+  <a href="assets/slide-23.jpg" aria-label="Open slide 23 at full size">
+    <img src="assets/slide-23.jpg" width="1920" height="1080"
+         alt="Slide 23: Appendix D: Incident contact and decision log. Text version below." loading="lazy">
+  </a>
+  <details><summary>Slide 23 text</summary><p>Appendix D: Incident contact and decision log</p><p>Contact list</p><p>Role</p><p>Name</p><p>Primary phone</p><p>Backup contact method</p><p>Alternate person</p><p>Incident lead</p><p>Executive decision maker</p><p>Technology lead</p><p>Communications lead</p><p>Managed IT or key vendor</p><p>Cyber insurer (if applicable)</p><p>Legal counsel</p><p>Outside incident response help</p><p>Decision and action log</p><p>Date and time</p><p>What we observed</p><p>Decision or action</p><p>Who decided</p><p>Who acted</p><p>Status</p><p>NGO-ISAC Briefing | November 5 | Educational maturity model, not an audit or certification</p><p>23</p></details>
+</section>
+
+<section id="slide-24" aria-labelledby="heading-24">
+  <h2 id="heading-24"><span>24 / 24</span> Appendix E: One-page maturity matrix (printable)</h2>
+  <a href="assets/slide-24.jpg" aria-label="Open slide 24 at full size">
+    <img src="assets/slide-24.jpg" width="1920" height="1080"
+         alt="Slide 24: Appendix E: One-page maturity matrix (printable). Text version below." loading="lazy">
+  </a>
+  <details><summary>Slide 24 text</summary><p>Appendix E: One-page maturity matrix (printable)</p><p>Left of Bang</p><p>Right of Bang</p><p>Lens</p><p>Inventory of devices and accounts</p><p>Suspicious sign-in alerts reviewed</p><p>MFA on all accounts</p><p>Account disable and reset in minutes</p><p>Regular, automated backups</p><p>Restore tested from backup</p><p>Score: __ / 3</p><p>Score: __ / 3</p><p>Operational</p><p>Written plan with named roles</p><p>Plan activated with clear roles</p><p>Annual tabletop exercise</p><p>Contact list and vendor escalation used</p><p>RTO and RPO set for key services</p><p>Recovery follows agreed priorities</p><p>Score: __ / 3</p><p>Score: __ / 3</p><p>Readiness</p><p>First-hour checklist exists</p><p>Incident validated and contained</p><p>Out-of-band channel agreed</p><p>Evidence preserved before cleanup</p><p>Authority to isolate systems defined</p><p>Decision log kept with times</p><p>Score: __ / 3</p><p>Score: __ / 3</p><p>Tactical</p><p>Leadership owns cyber risk</p><p>Board and stakeholders briefed</p><p>Multi-year roadmap funded</p><p>Lessons learned fund real fixes</p><p>Zero Trust and passwordless steps planned</p><p>Plan updated after each incident</p><p>Score: __ / 3</p><p>Score: __ / 3</p><p>Strategic</p><p>Scale: 0 Not established | 1 Informal or one person | 2 Documented and repeatable | 3 Tested, measured, and improving</p><p>NGO-ISAC Briefing | November 5 | Educational self-assessment. Not an audit, certification, or legal standard.</p><p>24</p></details>
+</section></main>
+<footer>Educational maturity model, not an audit or certification.
+<a href="https://github.com/moffetcat/left-of-bang-right-of-bang-ngo-isac-briefing">View on GitHub</a></footer>
+<script>
+document.getElementById('jump').addEventListener('change', function () {
+  if (this.value) {
+    const slide = document.getElementById(this.value);
+    history.replaceState(null, '', '#' + this.value);
+    slide.scrollIntoView();
+    const heading = slide.querySelector('h2');
+    heading.tabIndex = -1;
+    heading.focus({preventScroll: true});
+  }
+});
+</script>
+</body>
+</html>
